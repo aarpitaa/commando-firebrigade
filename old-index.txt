@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>  </title>
+    <link rel="stylesheet" href="old-style.css">
+</head>
+<body>
+    
+    <!-- side bar -->
+    <section class="side-bar">
+        
+        <!-- commando name and logo -->
+        <div class="commando-logo">
+            <img src="./images/side-bar/commando-logo.png" alt="commando-logo">
+            <span> কমান্ডো </span>
+        </div>
+
+        <div class="side-bar-nav">
+
+            <!-- side bar dashboard button -->
+            <button class="sidebar-btn dashboard-btn">
+                <img src="./images/side-bar/dashboard-icon.png" alt="dashboard-icon">
+                <span> Dashboard </span>
+            </button>
+
+            <!-- side bar location button -->
+            <button class="sidebar-btn location-btn">
+                <img src="./images/side-bar/location-icon.png" alt="location-icon">
+                <span> Location </span>
+            </button>
+
+            <!-- side bar report button -->
+            <button class="sidebar-btn report-btn">
+                <img src="./images/side-bar/report-icon.png" alt="report-icon">
+                <span> Report </span>
+            </button>
+
+            <!-- side bar all devices button -->
+            <button class="sidebar-btn all-devices-btn">
+                <img src="./images/side-bar/all-devices-icon.png" alt="all-devices-icon">
+                <span> All Devices </span>
+            </button>
+
+            <!-- side bar logout button -->
+            <button class="sidebar-btn logout-btn">
+                <img src="./images/side-bar/logout-icon.png" alt="logout-icon">
+                <span> Logout </span>
+            </button>
+
+        </div>
+
+        <!-- bondstein logo and title -->
+        <div class="bondstein-logo">
+            <p> A Product of </br> </p>
+            <div>
+                <img src="./images/side-bar/bondstein-logo.png" alt="bondstein-logo">
+                <img src="./images/side-bar/bondstein-title.png" alt="bondstein-title">
+            </div>
+        </div>
+
+    </section>
+    
+    <section class="content">
+
+        <!-- header with two parts -->
+        <section class="header">
+
+            <!-- first part of header with main menu button -->
+            <div class="header-1">
+                <img src="./images/header/menu-icon.png" alt="menu-icon">
+                <p> OVERVIEW </p>
+                <p> Map </p>
+            </div>
+
+            <!-- second part of header with drop down for location search -->
+            <div class="header-2">
+                <div class="header-2-left-end">
+                    <p> Device </p>
+
+                    <!-- dropdown for selecting area -->
+                    <select name="area" id="areaSelect">
+                        <option value="dhanmondi" selected> Dhanmondi </option>
+                        <option value="mirpur"> Mirpur </option>
+                        <option value="banani"> Banani </option>
+                    </select>
+                    
+                </div>
+                
+                <div class="header-2-right-end">
+                    <p> Last updated  12.30 PM, 20/01/22 </p>
+                    <button class="map-btn"> <img src="./images/header/map-icon.png" alt="map-icon"> Map </button>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- map section for google map view with a substitute map image -->
+        <section class="google-map">
+            <img src="./images/map.png" alt="map-sub">
+
+            <!-- statistics bar for devices -->
+            <div class="stats-bar">
+
+                <!-- information about the total number of devices connected -->
+                <div class="stat">
+                    <p> Total Devices </p>
+                    <p> ### </p>
+                </div>
+
+                <img src="./images/footer/space-bar.png" alt="space-bar">
+
+                <!-- information about the total number of connected devices that are online -->
+                <div class="stat">
+                    <p> Online </p>
+                    <p> ### </p>
+                </div>
+
+                <img src="./images/footer/space-bar.png" alt="space-bar">
+
+                <!-- information about the total number of connected devices that are offline -->
+                <div class="stat">
+                    <p> Offline </p>
+                    <p> # </p>
+                </div>
+
+                <img src="./images/footer/space-bar.png" alt="space-bar">
+
+                <!-- information about the total number of connected devices that are safe -->
+                <div class="stat">
+                    <p> Safe </p>
+                    <p> ### </p>
+                </div>
+
+                <img src="./images/footer/space-bar.png" alt="space-bar">
+
+                <!-- information about the total number of connected devices that are unsafe -->
+                <div class="stat">
+                    <p> Unsafe </p>
+                    <p> ## </p>
+                </div>
+                
+            </div>
+
+        </section>
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

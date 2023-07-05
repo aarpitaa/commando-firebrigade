@@ -1,0 +1,99 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.side-bar {
+    background-color: #2A3139;
+    color: #FFF;
+}
+
+.commando-logo {
+    gap: 5px;
+}
+
+.commando-logo img {
+    height: 16px;
+    width: 16px;
+}
+
+.side-bar-btn {
+    background-color: #2A3139;
+    border: none;
+    gap: 8px;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.side-bar-btn img {
+    height: 16px;
+    width: 16px;
+}
+
+.bondstein-title {
+    font-size: 12px;
+}
+
+.header-1 {
+    border-bottom: 4px solid #C6BFBF;
+}
+
+.header-1 img {
+    height: 21px;
+    width: 21px;
+}
+
+.header-1 p:nth-child(1) {
+    color: #222220;
+    font-size: 18px;
+}
+
+.header-1 p:nth-of-type(2) {
+    color: #646161;
+    font-size: 12px;
+}
+
+.header-2-left p {
+    color: #6A6363;
+    font-size: 10px;
+}
+
+.header-2-left select {
+    color: #040404;
+    font-size: 16px;
+}
+
+#areaSelect {
+    width: 269px;
+    border-bottom: 2px solid #C6BFBF;
+    outline: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url('./images/header/drop-down-icon.png') no-repeat right;
+    background-size: 10px 8px
+}
+
+.header-2-right p {
+    color: #6A6363;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.header-2-right button {
+    border: #40DD8F;
+    background: #40DD8F;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.header-2-right button img {
+    width: 16px;
+    height: 16px;
+}
+
+.stats-bar {
+    background: rgba(255, 255, 255, 0.48);
+    backdrop-filter: blur(7px);
+}

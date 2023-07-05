@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.side-bar {
+    width: 200px;
+    height: 821px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #2A3139;
+}
+
+.commando-logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.commando-logo img {
+    height: 16px;
+    width: 16px;
+}
+
+.side-bar-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 60px;
+    padding-top: 45px;
+    padding-bottom: 200px;
+}
+
+.sidebar-btn {
+    display: flex;
+    align-items: center;
+    background-color: #2A3139;
+    border: none;
+    gap: 8px;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.sidebar-btn img {
+    color: #FFF;
+    height: 16px;
+    width: 16px;
+}
+
+.bondstein-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10.62px;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.bondstein-logo div {
+    display: flex;
+    align-items: center;
+}
+
+.bondstein-logo img:nth-of-type(1) {
+    width: 16px;
+    height:16px;
+    flex-shrink: 0;
+}
+
+.bondstein-logo img:nth-of-type(2) {
+    width: 85.96px;
+    height: 22.965px;
+    flex-shrink: 0;
+}
+
+.content {
+    height: 821px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-1 {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    padding: 30px 1000px 30px 20px;
+    gap: 20px;
+    border-bottom: 4px solid #C6BFBF;
+}
+
+.header-1 img {
+    width: 21px;
+    height: 21px;
+}
+
+.header-1 p:nth-of-type(1) {
+    color: #222220;
+    font-size: 18px;
+}
+
+.header-1 p:nth-of-type(2) {
+    color: #646161;
+    font-size: 12px;
+}
+
+.header-2 {
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-2-left-end {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 20px 28px 10px 19px;
+}
+
+.header-2-left-end p {
+    color: #6A6363;
+    font-size: 10px;
+}
+
+.header-2-left-end select {
+    color: #040404;
+    font-size: 16px;
+}
+
+#areaSelect {
+    width: 269px;
+    border: none;
+    border-bottom: 2px solid #C6BFBF;
+    outline: none;
+    padding-bottom: 5px;
+    background-clip: padding-box;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url('./images/header/drop-down-icon.png') no-repeat right;
+    padding-right: 50px;
+    background-size: 10px 8px
+}
+
+.header-2-right-end {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-right: 55px;
+}
+
+.header-2-right-end p {
+    color: #6A6363;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.map-btn {
+    display: flex;
+    padding: 10px 25px;
+    align-items: center;
+    gap: 8px;
+    border: #40DD8F;
+    border-radius: 3px;
+    background: #40DD8F;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.map-btn img {
+    width: 16px;
+    height: 16px;
+}
+
+.google-map {
+    position: relative;
+}
+
+.google-map img {
+    width: 1240px;
+    height: 676px;
+}
+
+.stats-bar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    height: 100px;
+    width: 1150px;
+    bottom: 21px;
+    left: 44px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.48);
+    backdrop-filter: blur(7px);
+    padding: 10px 15px;
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    color: #141414;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.stats-bar img {
+    width: 1px;
+    height: 45px;
+    background: #000;
+}
