@@ -1,6 +1,65 @@
 * {
+    height: 100%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+/* home/landing and login pages base styling */
+
+nav {
+    height: 10%;
+    font-weight: 500;
+    color: white;
+}
+
+nav div img {
+    height: 20px;
+    width: 20px;
+}
+
+nav div span {
+    font-size: 20px;
+}
+
+.navigation a {
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: white;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.5s;
+}
+
+.navigation a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.home-login-btn {
+    height: 45px;
+    width: 120px;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+}
+
+/* home/landing page styling */
+
+
+/* dashboard styling */
 
 .side-bar {
     background-color: #2A3139;
@@ -8,12 +67,26 @@
 }
 
 .commando-logo {
+    /* font-size: 16px; */
     gap: 5px;
 }
 
 .commando-logo img {
     height: 16px;
     width: 16px;
+}
+
+.bondstein-logo div img {
+    height: 16px;
+    width: 16px;
+}
+
+.bondstein-title {
+    font-size: 12px;
+}
+
+.content {
+    height: 100%;
 }
 
 .side-bar-btn {
@@ -30,12 +103,13 @@
     width: 16px;
 }
 
-.bondstein-title {
-    font-size: 12px;
+.header {
+    height: 20%
 }
 
 .header-1 {
     border-bottom: 4px solid #C6BFBF;
+    height: 50%;
 }
 
 .header-1 img {
@@ -51,6 +125,10 @@
 .header-1 p:nth-of-type(2) {
     color: #646161;
     font-size: 12px;
+}
+
+.header-2 {
+    height: 50%;
 }
 
 .header-2-left p {
@@ -71,7 +149,7 @@
     -webkit-appearance: none;
     -moz-appearance: none;
     background: url('./images/header/drop-down-icon.png') no-repeat right;
-    background-size: 10px 8px
+    background-size: 10px 8px;
 }
 
 .header-2-right p {
@@ -93,7 +171,259 @@
     height: 16px;
 }
 
+.google-map {
+    height: 80%;
+}
+
 .stats-bar {
+    height: 80px;
     background: rgba(255, 255, 255, 0.48);
     backdrop-filter: blur(7px);
 }
+
+@media only screen and (min-width: 871px) and (max-width: 940px) {
+    .commando-logo, .side-bar-btn, .bondstein-logo, .header-2-left select, .stats-bar p {
+        font-size: 14px;
+    }
+
+    .bondstein-logo div img {
+        height: 20px;
+        width: 20px;
+    }
+
+    .header-1 {
+        padding: none;
+    }
+
+    .header-1 img {
+        height: 19.5px;
+        width: 19.5px;
+    }
+
+    .header-1 p:nth-of-type(1) {
+        font-size: 16px;
+    }
+
+    .bondstein-title, .header-1 p:nth-of-type(2), .header-2-right p {
+        font-size: 11px;
+    }
+
+    .header-2-left p {
+        font-size: 9px;
+    }
+
+    #areaSelect {
+        width: 240px;
+        background-size: 9px 7px;
+    }
+
+    .header-2-right button {
+        font-size: 16px;
+        padding: 2px;
+    }
+
+    .header-2-right button img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .stats-bar img {
+        height: 70px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 870px) {
+    .commando-logo, .side-bar-btn, .bondstein-logo, .header-2-left select, .stats-bar p {
+        font-size: 12px;
+    }
+
+    .bondstein-logo div img {
+        height: 17px;
+        width: 17px;
+    }
+
+    .header-1 img {
+        height: 18px;
+        width: 18px;
+    }
+
+    .header-1 p:nth-of-type(1) {
+        font-size: 14px;
+    }
+
+    .bondstein-title, .header-1 p:nth-of-type(2), .header-2-right p {
+        font-size: 10px;
+    }
+
+    .header-2-left p {
+        font-size: 8px;
+    }
+
+    #areaSelect {
+        width: 200px;
+        background-size: 8px 6px;
+    }
+
+    .header-2-right button {
+        font-size: 14px;
+        padding: 1px;
+    }
+
+    .header-2-right button img {
+        width: 12px;
+        height: 12px;
+    }
+
+    .stats-bar img {
+        height: 65px;
+    }
+}
+
+@media only screen and (min-width: 640px) and (max-width: 767px) {
+    .commando-logo, .side-bar-btn, .bondstein-logo, .header-2-left select, .stats-bar p {
+        font-size: 10px;
+    }
+
+    .bondstein-logo div img {
+        height: 14px;
+        width: 14px;
+    }
+
+    .header-1 img {
+        height: 16.5px;
+        width: 16.5px;
+    }
+
+    .header-1 p:nth-of-type(1) {
+        font-size: 12px;
+    }
+
+    .bondstein-title, .header-1 p:nth-of-type(2), .header-2-right p {
+        font-size: 9px;
+    }
+
+    .header-2-left p {
+        font-size: 7px;
+    }
+
+    #areaSelect {
+        width: 180px;
+        background-size: 7px 5px;
+    }
+
+    .header-2-right button {
+        font-size: 12px;
+        padding: 0.5px;
+    }
+
+    .header-2-right button img {
+        width: 10px;
+        height: 10px;
+    }
+
+    .stats-bar img {
+        height: 60px;
+    }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 639px) {
+    .commando-logo, .side-bar-btn, .bondstein-logo, .header-2-left select, .stats-bar p {
+        font-size: 8px;
+    }
+
+    .bondstein-logo div img {
+        height: 11px;
+        width: 11px;
+    }
+
+    .header-1 img {
+        height: 15px;
+        width: 15px;
+    }
+
+    .header-1 p:nth-of-type(1) {
+        font-size: 10px;
+    }
+
+    .bondstein-title, .header-1 p:nth-of-type(2), .header-2-right p {
+        font-size: 8px;
+    }
+
+    .header-2-left p {
+        font-size: 6px;
+    }
+
+    #areaSelect {
+        width: 180px;
+        background-size: 7px 5px;
+    }
+
+    .to-be-replaced span {
+        display: none;
+    }
+
+    .to-be-replaced:after {
+        content: "Last updated  12.30 PM, 20/01/22";
+    }
+
+    .header-2-right button {
+        font-size: 10px;
+        padding: 0.25px;
+    }
+
+    .header-2-right button img {
+        width: 8px;
+        height: 8px;
+    }
+
+    .stats-bar img {
+        height: 55px;
+    }
+}
+
+/* @media only screen and (min-width: 426px) and (max-width: 669px) {
+    .commando-logo, .side-bar-btn, .bondstein-logo, .header-2-left select, .stats-bar p {
+        font-size: 8px;
+    }
+
+    .bondstein-logo div img {
+        height: 11px;
+        width: 11px;
+    }
+
+    .header-1 img {
+        height: 15px;
+        width: 15px;
+    }
+
+    .header-1 p:nth-of-type(1) {
+        font-size: 10px;
+    }
+
+    .bondstein-title, .header-1 p:nth-of-type(2), .header-2-right p {
+        font-size: 8px;
+    }
+
+    .header-2-left p {
+        font-size: 6px;
+    }
+
+    #areaSelect {
+        width: 180px;
+        background-size: 7px 5px;
+    }
+
+    .header-2-right button {
+        font-size: 10px;
+        padding: 0.25px;
+    }
+
+    .header-2-right button img {
+        width: 8px;
+        height: 8px;
+    }
+
+    .stats-bar img {
+        height: 55px;
+    }
+} */
